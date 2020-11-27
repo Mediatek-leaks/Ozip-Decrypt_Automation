@@ -26,7 +26,7 @@ jobs:
        - name: Checkout
          uses: actions/checkout@master
          
-       - name: Downloading Ozip Now 
+       - name: Downloading Ozip Now.. 
          run: |
             sudo -E apt-get -qq update
             wget $FIRMWARE_LINK
