@@ -30,7 +30,6 @@ jobs:
          run: |
             sudo -E apt-get -qq update
             wget $FIRMWARE_LINK
-            bash apt-get install python-pip
              
        - name: Decrypting Ozip Now
          run: |
