@@ -34,8 +34,9 @@ jobs:
        - name: Decrypting Ozip Now
          run: |
              sudo -E apt-get -qq update
+             sudo apt-get install python-pip
              wget https://raw.githubusercontent.com/bkerler/oppo_ozip_decrypt/master/ozipdecrypt.py
-             bash ./ozipdecrypt.py $FIRMWARE_NAME
+             bash python3 ozipdecrypt.py $FIRMWARE_NAME
              
        - name: Upload Decrypted Zip
          run: |
