@@ -30,7 +30,7 @@ jobs:
          run: |
             sudo -E apt-get -qq update
             wget $FIRMWARE_LINK
-            bash android_build_env.sh
+            bash sudo apt-get install python-pip
              
        - name: Decrypting Ozip Now
          run: |
