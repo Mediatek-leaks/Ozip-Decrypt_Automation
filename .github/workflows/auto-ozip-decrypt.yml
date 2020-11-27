@@ -37,7 +37,7 @@ jobs:
              sudo apt-get install python-pip
              sudo pip install docopt
              sudo pip install pycryptodome
-             wget https://raw.githubusercontent.com/bkerler/oppo_ozip_decrypt/master/ozipdecrypt.py
+             wget https://raw.githubusercontent.com/techyminati/oppo_ozip_decrypt/master/ozipdecrypt.py
              sudo python3 ozipdecrypt.py $FIRMWARE_NAME
              
        - name: Upload Decrypted Zip
